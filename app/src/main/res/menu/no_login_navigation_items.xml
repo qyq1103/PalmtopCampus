@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/campus_style"
+        android:icon="@drawable/ic_campus_style"
+        android:title="@string/campus_style"/>
+    <item android:id="@+id/application"
+         android:icon="@drawable/ic_application"
+        android:title="@string/application"/>
+</menu>

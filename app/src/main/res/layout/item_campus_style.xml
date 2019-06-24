@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/news_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@null"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/news_img"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/news_img"
+        android:text="@string/title"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/campus_style_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:text="@string/time"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/news_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/news_img"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/news_img"
+        android:singleLine="true"
+        android:text="@string/news_desc"
+        android:textSize="16sp" />
+</RelativeLayout>

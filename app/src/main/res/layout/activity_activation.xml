@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg_1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/login_bg_2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/activation_user"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/text_bg">
+
+            <ImageView
+                android:id="@+id/birthday_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_birthday" />
+
+            <EditText
+                android:id="@+id/et_birthday"
+                style="@style/LoginEditTextStyle"
+                android:layout_alignTop="@id/birthday_logo"
+                android:layout_alignBottom="@id/birthday_logo"
+                android:layout_toEndOf="@id/birthday_logo"
+                android:hint="@string/birthday_input"
+                android:inputType="date"
+                android:maxLength="12"
+                tools:ignore="Autofill" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/national"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@mipmap/text_bg">
+
+            <ImageView
+                android:id="@+id/national_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_national" />
+
+            <EditText
+                android:id="@+id/et_national"
+                style="@style/LoginEditTextStyle"
+                android:layout_alignTop="@id/national_logo"
+                android:layout_alignBottom="@id/national_logo"
+                android:layout_toEndOf="@id/national_logo"
+                android:hint="@string/national_input"
+                android:inputType="text"
+                tools:ignore="Autofill" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@mipmap/text_bg">
+
+            <ImageView
+                android:id="@+id/phone_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_phone" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/LoginEditTextStyle"
+                android:layout_alignTop="@id/phone_logo"
+                android:layout_alignBottom="@id/phone_logo"
+                android:layout_toEndOf="@id/phone_logo"
+                android:hint="@string/phone_input"
+                android:inputType="phone"
+                tools:ignore="Autofill" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@mipmap/text_bg">
+
+            <ImageView
+                android:id="@+id/office_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_office" />
+
+            <EditText
+                android:id="@+id/et_office"
+                style="@style/LoginEditTextStyle"
+                android:layout_alignTop="@id/office_logo"
+                android:layout_alignBottom="@id/office_logo"
+                android:layout_toEndOf="@id/office_logo"
+                android:hint="@string/office_inpus"
+                android:inputType="text"
+                tools:ignore="Autofill" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@mipmap/text_bg">
+
+            <ImageView
+                android:id="@+id/title_position_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_title_position" />
+
+            <EditText
+                android:id="@+id/et_title_position"
+                style="@style/LoginEditTextStyle"
+                android:layout_alignTop="@id/title_position_logo"
+                android:layout_alignBottom="@id/title_position_logo"
+                android:layout_toEndOf="@id/title_position_logo"
+                android:hint="@string/titpos_input"
+                android:inputType="text"
+                tools:ignore="Autofill" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@mipmap/text_bg">
+
+            <ImageView
+                android:id="@+id/password_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_password" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/LoginEditTextStyle"
+                android:layout_alignTop="@id/password_logo"
+                android:layout_alignBottom="@id/password_logo"
+                android:layout_toEndOf="@id/password_logo"
+                android:hint="@string/new_password"
+                android:inputType="textPassword"
+                tools:ignore="Autofill" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_activation"
+            style="@style/LoginButtonStyle"
+            android:layout_marginTop="15dp"
+            android:onClick="Activation"
+            android:text="@string/activation" />
+    </LinearLayout>
+</LinearLayout>
